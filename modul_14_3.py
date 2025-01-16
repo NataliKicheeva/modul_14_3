@@ -52,7 +52,6 @@ async def get_buying_list(message: types.Message):
     ]
 
     for product in products:
-        # Отправляем описание продукта
         with open(product['image'], 'rb') as photo:
             await message.answer_photo(photo,
                                        caption=f"Название: {product['name']} | Описание: {product['desc']} |"
