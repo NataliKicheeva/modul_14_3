@@ -43,7 +43,7 @@ def get_inline_menu():
 
 
 @dp.message_handler(text="Купить")
-async def get_buying_list(message: types.Message):
+async def get_buying_list(message):
     products = [
         {"name": "Product1", "desc": "Описание 1", "price": 100, "image": "1.jpg"},
         {"name": "Product2", "desc": "Описание 2", "price": 200, "image": "2.jpg"},
